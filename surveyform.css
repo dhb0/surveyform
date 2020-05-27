@@ -1,0 +1,99 @@
+body{
+
+    background-color: #DFDCE3;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 500;
+}
+
+#head{
+    color: #FC4A1A;
+    margin: 80px auto auto auto;
+    text-align: center;
+    font-size: 1.3em;
+}
+
+
+
+input,
+button,
+select,
+textarea {
+    border-radius: 8px;
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+input[type="text"],input[type='number'],textarea, select{
+    width: 100%;
+    height: 1.5em;
+}
+
+.input-radio{
+    margin-right: 5px;
+}
+
+#checkbox-input{
+    margin-right: 5px;
+}
+
+textarea{
+    height: 5em;
+}
+#submit{
+    background-color: #F7B733;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    width: 100%;
+    height: 1.8em;
+}
+
+
+
+#instrument{
+    position: relative;
+    bottom:0.6em;
+}
+#daw-selection{
+    position:relative;
+    bottom:0.6em;
+}
+
+label{
+    align-items: center;
+    margin-top: 0.4em;
+}
+
+form{
+    background-color: #4ABDAC;
+    width: 50%;
+    margin: auto;
+    border-radius: 15px;
+    padding: 3em;
+    text-align: left;
+    font-style: normal;
+    font-size: 1.3em;
+}
+
+label{
+    display: block;
+}
+
+#explan{
+    font-size: 0.8em;
+    font-style: italic;
+}
+
+footer{
+    text-align: center;
+    color: #FC4A1A;
+    margin-top: 1em;
+    margin-bottom:1em;
+    font-weight: 700;
+}
+
+@media screen and (max-width:768px){
+    form{
+        width:90%;
+        padding:20px;
+    }
+}

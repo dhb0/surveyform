@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed" rel="stylesheet">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="surveyform.css">
+    <title>Survey Page</title>
+</head>
+<body>
+    <div id='head'>
+        <h1 id='title'>Musical Talent Survey Form</h1>
+        <p id='description'><em>Thank you for taking the time to help us improve the platform<em></em></p>
+    </div>
+    <form id='survey-form'>
+        <div class='form-grouping'>
+            <label id='name-label' for='name'>Your Name:</label>
+            <input type="text" placeholder="Please Enter Your Name" required>
+        </div>
+        <div class='form-grouping'>
+            <label for='mail' id='email-label'>Your Mail:</label>
+            <input type="text" id="mail" placeholder="Please Enter Your E-Mail" required>
+        </div>
+        <div class='form-grouping'>
+            <label for="age" id="number-label">Your Age <span id='explan'>Optional</span></label>
+            <input type="number" id="number" placeholder='Your Age' min='10' max='99' required>
+        </div>
+        <div class='form-grouping'>
+            <p>What is your Main Instrument?</p>
+            <select name="instrument" id="instrument" required>
+                <option disabled selected value>Select Your Main Instrument</option>
+                <option value="guitar">Guitar</option>
+                <option value="bass">Bass Guitar</option>
+                <option value="drums">Drums</option>
+                <option value="keyboard">Keys</option>
+                <option value="brass">Brass</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <div class='form-grouping'>
+            <p>What is your level?</p>
+            <label>
+                <input class='input-radio' type="radio" name='level' value='beginner'>Beginner
+            </label>
+            <label>
+                <input type="radio" class='input-radio' name='level' value='amateur'>Amateur
+            </label>
+            <label>
+                <input type="radio" class='input-radio' name='level' value='pro'> Professional
+            </label>
+        </div>
+        <div class="form-grouping">
+            <p>What is your favorite DAW?</p>
+                <select name="daw" id="daw-selection">
+                    <option disabled selected value>Select One</option>
+                    <option value="cubase">Cubase</option>
+                    <option value="ableton">Ableton Live</option>
+                    <option value="flstudio">FL Studio</option>
+                    <option value="studioone">Studio One</option>
+                    <option value="logic">Logic Pro</option>
+                </select>
+        </div>
+        <div class='form-grouping'>
+            <p>What are you interested in?<span id='explan'>(Check all that apply)</span></p>
+            <label for="interests">
+                <input type="checkbox"
+                 id='checkbox-input'
+                 value='songwr'>Songwriting/Composing
+            </label>
+            <label for="interests">
+                <input type="checkbox"
+                 id='checkbox-input'
+                 value='sounddsgn'>Sound Design
+            </label>
+            <label for="interests">
+                <input type="checkbox"
+                 id='checkbox-input'
+                 value='instrument'>Instrument
+            </label>
+            <label for="interests">
+                <input type="checkbox"
+                 id='checkbox-input'
+                 value='tech'>Sound Technologies
+            </label>
+            <label for="interests">
+                <input type="checkbox"
+                 id='checkbox-input'
+                 value='mixmaster'>Mix and Mastering
+            </label>
+        </div>
+        <div id='form-grouping'>
+            <p>Any Comments or Suggestions?</p>
+            <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Enter your comment here..."
+            rows=''
+            cols=''>
+            </textarea>
+        </div>
+        <div id='form-grouping'>
+            <label for="submit">
+                <input type="submit" id='submit'>
+            </label>
+        </div>
+    </form>
+    <footer>This website is designed by DHB for <a href="http://freecodecamp.com" target="_blank">FreeCodeCamp.com</a></footer>
+</body>
+</html>
